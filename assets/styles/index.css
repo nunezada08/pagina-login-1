@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=TASA+Explorer:wght@400..800&display=swap');
+
+body {
+    background-image: url('https://wallpapers.com/images/featured/4k-background-fd313fxzl511betu.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+#container {
+    background-color: rgb(255, 255, 255);
+    width: 430px;
+    height: 430px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    font-family: 'TASA Explorer', sans-serif;
+}
+
+.userinteraction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: start;
+    background-color: rgb(255, 255, 255);
+    border: 2.5px solid black;
+    color: rgb(0, 0, 0);
+    width: 270px;
+    height: 40px;
+    border-radius: 25px;
+}
+
+.userinteraction img {
+    margin-left: 12px;
+    width: 26px;
+    height: 26px;
+}
+
+#Welcome {
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+#login {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border: 2.5px solid black;
+    border-radius: 30px;
+    width: 180px;
+    height: 40px;
+}
