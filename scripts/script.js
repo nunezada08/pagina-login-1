@@ -7,4 +7,4 @@ document.getElementById('login').addEventListener('click', function () {
     } else {
         alert('Usuário ou senha incorretos!');
     }
-});
+}); 
