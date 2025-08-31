@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=TASA+Explorer:wght@400..800&display=swap');
 
 body {
-    background-image: url('https://wallpapers.com/images/featured/4k-background-fd313fxzl511betu.jpg');
+    background-image: url('../images/background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -10,6 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    overflow: hidden;
 
 }
 
@@ -19,6 +20,7 @@ body {
     -webkit-backdrop-filter: blur(20px);
     width: 430px;
     height: 430px;
+    max-height: 100vh;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
@@ -43,7 +45,7 @@ body {
 }
 
 .userinteraction img {
-    margin-left: 12px;
+    margin-left: 10px;
     width: 26px;
     height: 26px;
 }
@@ -74,6 +76,19 @@ body {
     transition: all 0.4s ease;
 }
 
+.userinteraction input {
+    
+    font-family: 'TASA Explorer', sans-serif;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+    color: #000;
+    width: 100%;
+    padding-left: 2px;
+}
+
 @media (max-width: 600px) {
     #container {
         width: 95vw;
@@ -91,15 +106,15 @@ body {
         font-size: 1rem;
     }
 
+    #Welcome {
+        font-size: 2rem;
+        text-align: center;
+    }
+
     #login {
         width: 70vw;
         max-width: 180px;
         height: 38px;
         font-size: 1rem;
-    }
-
-    #Welcome {
-        font-size: 2rem;
-        text-align: center;
     }
 }
