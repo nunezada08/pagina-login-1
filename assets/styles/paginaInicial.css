@@ -43,20 +43,8 @@ main {
   border-radius: 28px;
   margin-bottom: 40px;
 }
-#meus-hobbies {
-  background-color: rgb(226, 203, 250);
-  width: 80%;
-  margin: 0 auto;
-  padding: 40px;
-  border-radius: 28px;
-  margin-bottom: 40px;
-}
 
 .texto-sobre-mim {
-  font-size: 20px;
-}
-
-.texto-meus-hobbies {
   font-size: 20px;
 }
 
@@ -65,40 +53,15 @@ main {
   margin-bottom: 25px;
   border-bottom: 2px solid rgb(255, 255, 255);
 }
-#titulo-meus-hobbies {
-  font-size: 35px;
-  margin-bottom: 25px;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 16px;
-}
-
-li {
-  background-color: rgb(255, 255, 255);
-  padding: 11px;
-  border-left: 4px solid rgb(24, 0, 43);
-  border-radius: 10px;
-  font-size: 18px;
-  min-width: 250px;
-}
-
-li:hover {
-  background-color: rgb(203, 172, 253);
-  transform: translateX(5px);
-  transition: all 0.6s ease;
-}
 
 #contato {
-  background-color: rgb(226, 203, 250);
+  background-color: rgb(35, 34, 40, 0.812);
   width: 80%;
   margin: 0 auto;
   padding: 40px;
   border-radius: 28px;
   margin-bottom: 40px;
+  color: white;
 }
 
 #contato h3 {
@@ -113,19 +76,19 @@ li:hover {
 }
 
 #contato a {
-  color: rgb(163, 109, 250);
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-weight: bold;
   padding: 0.5rem 1rem;
   margin: 0 0;
-  border: 2px solid rgb(163, 109, 250);
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 25px;
   display: inline-block;
   transition: all 0.3s ease;
 }
 
 #contato a:hover {
-  background-color: rgb(191, 154, 250);
+  background-color: rgb(0, 51, 102);
   color: white;
   transform: translateY(-2px);
 }
@@ -142,53 +105,49 @@ footer p {
   font-size: 1rem;
 }
 
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-  header,
-  main,
-  #sobre-mim,
-  #meus-hobbies,
-  #contato,
-  footer {
-    padding: 20px;
-    width: 100%;
-    border-radius: 16px;
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+  header {
+    padding: 18px;
+    font-size: 16px;
+  }
+
+  main {
+    padding: 12px 4px;
   }
 
   #sobre-mim,
-  #meus-hobbies,
   #contato {
-    padding: 20px;
-    margin-bottom: 20px;
+    width: 98%;
+    padding: 14px;
+    border-radius: 12px;
+    margin-bottom: 14px;
   }
 
-  ul {
-    flex-direction: column;
-    gap: 10px;
+  #titulo-sobre-mim {
+    font-size: 20px;
+    margin-bottom: 10px;
   }
 
-  li {
-    min-width: unset;
-    font-size: 16px;
-    padding: 8px;
-  }
-
-  #titulo-sobre-mim,
-  #titulo-meus-hobbies {
-    font-size: 25px;
-    margin-bottom: 15px;
-  }
-
-  .texto-sobre-mim,
-  .texto-meus-hobbies {
-    font-size: 16px;
+  .texto-sobre-mim {
+    font-size: 14px;
   }
 
   #contato h3 {
-    font-size: 18px;
+    font-size: 15px;
   }
 
   #contato p {
-    font-size: 15px;
+    font-size: 13px;
+  }
+
+  #contato a {
+    font-size: 13px;
+    padding: 0.3rem 0.7rem;
+  }
+
+  footer {
+    padding: 1rem;
+    font-size: 0.9rem;
   }
 }
