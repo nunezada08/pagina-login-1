@@ -9,6 +9,6 @@ document.getElementById('login').addEventListener('click', function () {
     if (user === savedUser && password === savedPassword) {
         window.location.href = './pages/paginaInicial.html';
     } else {
-        alert('Usuário ou senha incorretos!');
+        alert('User ou password is incorrect!');
     }
 });
